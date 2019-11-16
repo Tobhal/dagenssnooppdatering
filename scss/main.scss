@@ -3,3 +3,22 @@
 @import 'color';
 @import 'layout';
 
+body {
+  background-color: $black;
+  color: $white;
+
+  font-family: 'Roboto', sans-serif;
+  @include templateGrid;
+}
+
+header {
+  @include headerGrid;
+}
+
+main {
+  @include mainGrid;
+}
+
+footer {
+  @include footerGrid;
+}
