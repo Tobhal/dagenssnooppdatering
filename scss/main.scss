@@ -5,8 +5,8 @@
 @import 'layoutFlex';
 
 body {
-  background-color: $black;
-  color: $white;
+  background-color: $color-Background;
+  color: $color-Text;
   font-size: 1em;
 
   font-family: 'Roboto', sans-serif;
@@ -17,8 +17,17 @@ header {
   @include headerGrid;
 }
 
+.lastUpdate {
+  color: $color-UpdateTime;
+  margin: 0.1em;
+}
+
 main {
   @include mainGrid;
+}
+
+h1 {
+  margin: 0.5em 0 0.1em 0;
 }
 
 h2 {
@@ -26,7 +35,7 @@ h2 {
 }
 
 img {
-  max-width: 300px;
+  max-width: 40vh;
 }
 
 figure {
@@ -42,7 +51,6 @@ figure {
 }
 
 #olderDaysShow {
-  cursor: s-resize;
   border-bottom: solid 1px;
 }
 

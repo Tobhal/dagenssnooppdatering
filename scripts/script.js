@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function (){
 
   if (localStorage.olderDaysShow == "true") {
     document.getElementsByClassName("olderDays")[0].style.display = "";
+    olderDaysShow.style.cursor = "n-resize"
     localStorage.olderDaysShow = true;
   } else {
     document.getElementsByClassName("olderDays")[0].style.display = "hidden";
+    olderDaysShow.style.cursor = "s-resize"
     localStorage.olderDaysShow = false;
   }
 
