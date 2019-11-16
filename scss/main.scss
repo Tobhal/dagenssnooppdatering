@@ -7,6 +7,7 @@
 body {
   background-color: $black;
   color: $white;
+  font-size: 1em;
 
   font-family: 'Roboto', sans-serif;
   @include templateGrid;
@@ -28,16 +29,21 @@ img {
   max-width: 300px;
 }
 
+figure {
+  margin: 0;
+}
+
 .olderDays {
   @include flexOlderDays;
 }
 
 .olderDays img {
-  padding: 10px 50px;
+  @include flexImage;
 }
 
 #olderDaysShow {
   cursor: s-resize;
+  border-bottom: solid 1px;
 }
 
 footer {

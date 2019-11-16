@@ -5,3 +5,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@mixin flexImage {
+  
+  @media screen and (max-width: 1000px) {
+    max-width: 7rem;
+    padding: 0.5rem 2rem;
+  }
+  max-width: 200px ;
+  padding: 10px 50px;
+}
