@@ -1,7 +1,8 @@
 // main.scss
 // Import
 @import 'color';
-@import 'layout';
+@import 'layoutGrid';
+@import 'layoutFlex';
 
 body {
   background-color: $black;
@@ -17,6 +18,26 @@ header {
 
 main {
   @include mainGrid;
+}
+
+h2 {
+  width: 100%;
+}
+
+img {
+  max-width: 300px;
+}
+
+.olderDays {
+  @include flexOlderDays;
+}
+
+.olderDays img {
+  padding: 10px 50px;
+}
+
+#olderDaysShow {
+  cursor: s-resize;
 }
 
 footer {

@@ -1,4 +1,4 @@
-// _layout.scss
+// _layoutGrid.scss
 @mixin templateGrid {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@
   grid-template-rows: auto auto 100px;
   grid-template-areas: 
     "header header header"
-    ". main ."
+    "main main main"
     "footer footer footer";
 }
 
@@ -20,7 +20,7 @@
 
 @mixin mainGrid {
   grid-area: main;
-  
+  justify-items: center;
 }
 
 @mixin footerGrid {
